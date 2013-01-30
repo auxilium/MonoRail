@@ -155,7 +155,7 @@
       <Name>System.XML</Name>
     </Reference>
     <ProjectReference Include="..\Castle.MonoRail.Framework\Castle.MonoRail.Framework.csproj">
-      <Name>Castle.MonoRail.Framework-vs2008</Name>
+      <Name>Castle.MonoRail.Framework</Name>
       <Project>{EC393863-333E-49CE-94A6-654B9F323954}</Project>
       <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
     </ProjectReference>
@@ -180,7 +180,6 @@
     <Compile Include="ARSmartDispatcherController.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Pagination\AbstractPaginableQuery.cs" />
     <Compile Include="Pagination\ARPaginableCriteria.cs">
       <SubType>Code</SubType>

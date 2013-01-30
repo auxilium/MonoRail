@@ -1,0 +1,1 @@
+%~dp0../.nuget/NuGet.exe pack CustomMonorail2.nuspec

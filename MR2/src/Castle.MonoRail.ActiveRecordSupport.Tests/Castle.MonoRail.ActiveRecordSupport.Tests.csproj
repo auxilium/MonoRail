@@ -156,7 +156,7 @@
     </ProjectReference>
     <ProjectReference Include="..\TestSiteARSupport\TestSiteARSupport.csproj">
       <Project>{26AA3359-6571-4575-845D-ED05E4EDB586}</Project>
-      <Name>TestSiteARSupport-vs2008</Name>
+      <Name>TestSiteARSupport</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
