@@ -21,8 +21,9 @@ namespace Castle.MonoRail.WindsorExtension
 	using Castle.MonoRail.Framework;
 	using Castle.MonoRail.Framework.Services;
 	using Castle.MonoRail.Framework.Services.Utils;
+	using Castle.Windsor;
 
-	/// <summary>
+    /// <summary>
 	/// Facility responsible for registering the controllers in
 	/// the controllerTree.
 	/// </summary>
@@ -86,7 +87,7 @@ namespace Castle.MonoRail.WindsorExtension
 		{
 			public IServiceProviderEx LocateProvider()
 			{
-				return WindsorContainerAccessorUtil.ObtainContainer();
+				return new WindsorServiceProvider(WindsorContainerAccessorUtil.ObtainContainer());
 			}
 		}
 	}

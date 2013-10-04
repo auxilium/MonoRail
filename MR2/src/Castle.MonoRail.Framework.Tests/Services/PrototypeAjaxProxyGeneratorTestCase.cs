@@ -14,7 +14,7 @@
 
 namespace Castle.MonoRail.Framework.Tests.Services
 {
-	using ActiveRecordSupport;
+	//using ActiveRecordSupport;
 	using Castle.MonoRail.Framework.Services.AjaxProxyGenerator;
 	using JSON;
 	using NUnit.Framework;
@@ -75,10 +75,10 @@ namespace Castle.MonoRail.Framework.Tests.Services
 				"parameters: '_=&name='+name+'&age='+age+''}); \r\n\t\t" + 
 				"if(!callback) return r.transport.responseText;\r\n\t}\r\n,\r\n\t" +
 
-				"actionWithARFetch: function(personId, age, callback)\r\n\t{\r\n\t\t" +
-				"var r=new Ajax.Request('/controller2/ActionWithARFetch', {method: 'post', asynchronous: !!callback, onComplete: callback, " +
-				"parameters: '_=&personId='+personId+'&age='+age+''}); \r\n\t\t" +
-				"if(!callback) return r.transport.responseText;\r\n\t}\r\n,\r\n\t" +
+                //"actionWithARFetch: function(personId, age, callback)\r\n\t{\r\n\t\t" +
+                //"var r=new Ajax.Request('/controller2/ActionWithARFetch', {method: 'post', asynchronous: !!callback, onComplete: callback, " +
+                //"parameters: '_=&personId='+personId+'&age='+age+''}); \r\n\t\t" +
+                //"if(!callback) return r.transport.responseText;\r\n\t}\r\n,\r\n\t" +
 
 				"actionReturnJSON: function(test, callback)\r\n\t{\r\n\t\t" +
 				"var r=new Ajax.Request('/controller2/ActionReturnJSON', {method: 'get', asynchronous: !!callback, onComplete: callback, parameters: '_=&test='+Object.toJSON(test)+''}); \r\n\t\t" +
@@ -117,10 +117,10 @@ namespace Castle.MonoRail.Framework.Tests.Services
 			{
 			}
 
-			[AjaxAction, AccessibleThrough(Verb.Post)]
-			public void ActionWithARFetch([ARFetch("personId")] Person person, int age)
-			{
-			}
+            //[AjaxAction, AccessibleThrough(Verb.Post)]
+            //public void ActionWithARFetch([ARFetch("personId")] Person person, int age)
+            //{
+            //}
 
 			[AjaxAction]
 			public void ActionReturnJSON([JSONBinder]string test) {
