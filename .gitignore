@@ -26,3 +26,9 @@ MR3/Extensions/OData/src/Castle.MonoRail.Extension.OData/obj/
 MR3/Extensions/OData/tests/Castle.MonoRail.Extension.OData.Tests/bin/
 MR3/Extensions/OData/tests/Castle.MonoRail.Extension.OData.Tests/obj/
 MR3/Perf/build/
+
+*.user
+packages/
+package/**/*.dll
+package/**/*.pdb
+*.nupkg
