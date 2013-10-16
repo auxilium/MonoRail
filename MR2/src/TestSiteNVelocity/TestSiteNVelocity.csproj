@@ -103,9 +103,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\$(BuildConfigKey)\Castle.Components.Pagination.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.Core">
-      <HintPath>..\..\packages\Castle.Core.3.2.0\lib\net40-client\Castle.Core.dll</HintPath>
-    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\lib\$(BuildConfigKey)\log4net.dll</HintPath>
@@ -253,7 +250,6 @@
       <SubType>Code</SubType>
     </Compile>
     <None Include="log4net.config" />
-    <Content Include="packages.config" />
     <None Include="views\action\index.vm" />
     <None Include="views\action\render.vm" />
     <None Include="views\action\renderinline.vm" />
