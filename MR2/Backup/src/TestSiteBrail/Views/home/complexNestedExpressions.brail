@@ -1,0 +1,10 @@
+<% 
+output UrlHelper.Link( title , {
+		@controller: "customers",
+		@action: "list"
+	}, 
+	{
+		@onclick: "paginate(${pageIndex})"
+	}
+)
+%>

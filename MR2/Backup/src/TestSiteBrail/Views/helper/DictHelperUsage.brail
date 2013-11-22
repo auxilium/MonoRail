@@ -1,0 +1,3 @@
+<%
+output FormHelper.TextFieldValue( "name", "value", DictHelper.CreateDict("size=30", "maxlength=20", "style=something", "eol=true") )
+%>
