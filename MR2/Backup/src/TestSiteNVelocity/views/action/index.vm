@@ -1,9 +1,0 @@
-<p>Testing ActionHelper</p>
-
-$action.Render("%{controller='Action', action='InnerAction'}")
-
-$action.Render("%{controller='Action', action='AnotherInnerAction'}")
-
-$action.RenderInline("%{controller='Action', action='AnotherInnerActionRenderedInline'}")
-
-<p>Testing ActionHelper ended</p>
